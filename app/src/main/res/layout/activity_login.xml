@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".ui.login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_padding_16dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pack_musical_notes_with_color"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_32dp"
+            android:layout_marginRight="@dimen/margin_padding_32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_16dp"
+                android:layout_marginBottom="@dimen/margin_padding_8dp"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textSize="@dimen/font_size_extra_extra_large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_8dp"
+                android:layout_marginBottom="@dimen/margin_padding_16dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/google_sign"
+                    style="@style/Theme.CustomMaterialButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_padding_8dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:stateListAnimator="@null"
+                    app:icon="@drawable/ic_google"
+                    app:iconGravity="textStart"
+                    app:iconSize="22dp"
+                    app:iconTint="@android:color/transparent"
+                    app:iconTintMode="add"
+                    tools:ignore="NestedWeights" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/facebook_sign"
+                    style="@style/Theme.CustomMaterialButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_padding_8dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:stateListAnimator="@null"
+                    app:icon="@drawable/ic_facebook"
+                    app:iconGravity="textStart"
+                    app:iconSize="@dimen/icon_small_size"
+                    app:iconTint="@android:color/transparent"
+                    app:iconTintMode="add" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_40dp"
+                android:autofillHints=""
+                android:drawableEnd="@drawable/ic_username"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/hint_username"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/margin_padding_16dp"
+                android:paddingRight="@dimen/margin_padding_16dp" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_40dp"
+                android:layout_marginTop="@dimen/margin_padding_16dp"
+                android:layout_marginBottom="@dimen/margin_padding_16dp"
+                android:autofillHints=""
+                android:drawableEnd="@drawable/ic_outline_lock_24"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/margin_padding_16dp"
+                android:paddingRight="@dimen/margin_padding_16dp" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/purple_gradient_background"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_padding_16dp"
+                app:backgroundTint="@null"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_8dp"
+                android:layout_marginBottom="@dimen/margin_padding_32dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.016"
+                    android:text="@string/already_havent_an_account"
+                    android:textSize="@dimen/font_size_large" />
+
+                <TextView
+                    android:id="@+id/tv_create_a_new_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_padding_8dp"
+                    android:letterSpacing="0.016"
+                    android:text="@string/register_now"
+                    android:textSize="@dimen/font_size_large" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_loading"
+        layout="@layout/full_screen_loading" />
+</FrameLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_32dp"
+            android:layout_marginTop="@dimen/margin_padding_32dp"
+            android:layout_marginEnd="@dimen/margin_padding_32dp"
+            android:layout_marginBottom="@dimen/margin_padding_24dp"
+            android:text="@string/register"
+            android:textSize="@dimen/font_size_extra_extra_large" />
+
+        <TextView
+            android:id="@+id/tv_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_32dp"
+            android:layout_marginEnd="@dimen/margin_padding_32dp"
+            android:layout_marginBottom="@dimen/margin_padding_8dp"
+            android:text="@string/full_name"
+            android:textSize="@dimen/font_size_large" />
+
+        <EditText
+            android:id="@+id/edt_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginStart="@dimen/margin_padding_32dp"
+            android:layout_marginEnd="@dimen/margin_padding_32dp"
+            android:layout_marginBottom="@dimen/margin_padding_16dp"
+            android:hint="@string/enter_your_full_name"
+            android:inputType="text"
+            android:paddingLeft="@dimen/margin_padding_16dp"
+            android:paddingRight="@dimen/margin_padding_16dp"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_32dp"
+            android:layout_marginEnd="@dimen/margin_padding_32dp"
+            android:layout_marginBottom="@dimen/margin_padding_8dp"
+            android:text="@string/email"
+            android:textSize="@dimen/font_size_large" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginStart="@dimen/margin_padding_32dp"
+            android:layout_marginEnd="@dimen/margin_padding_32dp"
+            android:layout_marginBottom="@dimen/margin_padding_16dp"
+            android:hint="@string/enter_email_address"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/margin_padding_16dp"
+            android:paddingRight="@dimen/margin_padding_16dp"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_32dp"
+            android:layout_marginEnd="@dimen/margin_padding_32dp"
+            android:layout_marginBottom="@dimen/margin_padding_8dp"
+            android:text="@string/password"
+            android:textSize="@dimen/font_size_large" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginStart="@dimen/margin_padding_32dp"
+            android:layout_marginEnd="@dimen/margin_padding_32dp"
+            android:layout_marginBottom="@dimen/margin_padding_16dp"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/margin_padding_16dp"
+            android:paddingRight="@dimen/margin_padding_16dp"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/tv_confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_32dp"
+            android:layout_marginEnd="@dimen/margin_padding_32dp"
+            android:layout_marginBottom="@dimen/margin_padding_8dp"
+            android:text="@string/confirm_password"
+            android:textSize="@dimen/font_size_large" />
+
+        <EditText
+            android:id="@+id/edt_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginStart="@dimen/margin_padding_32dp"
+            android:layout_marginEnd="@dimen/margin_padding_32dp"
+            android:layout_marginBottom="@dimen/margin_padding_24dp"
+            android:hint="@string/reenter_your_password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/margin_padding_16dp"
+            android:paddingRight="@dimen/margin_padding_16dp"
+            tools:ignore="Autofill" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_padding_32dp"
+            android:layout_marginEnd="@dimen/margin_padding_32dp"
+            android:layout_marginBottom="@dimen/margin_padding_16dp"
+            android:background="@drawable/purple_gradient_background"
+            android:stateListAnimator="@null"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            app:backgroundTint="@null" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pack_musical_notes_with_color"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_loading"
+        layout="@layout/full_screen_loading" />
+
+</FrameLayout>

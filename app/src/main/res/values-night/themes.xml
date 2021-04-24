@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Giao diện tối -->
+    <style name="Theme.MusicApplication" parent="Theme.Base">
+        <!-- Màu chữ mặc định -->
+        <item name="android:textColor">@color/white</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="M">false</item>
+
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/black_800</item>
+        <item name="colorSecondary">@color/green_200</item>
+        <item name="colorSecondaryVariant">@color/green_500</item>
+        <item name="colorOnPrimary">@color/black_900</item>
+        <item name="colorOnSecondary">@color/black_900</item>
+
+        <!-- EditText -->
+        <item name="editTextBackground">@drawable/rounded_edit_text_dark_background</item>
+        <item name="android:editTextBackground">@drawable/rounded_edit_text_dark_background</item>
+    </style>
+
+    <!-- Tùy biến lại Material Button cho phù hợp với giao diện TỐI -->
+    <style name="Theme.CustomMaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/black_200</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">@dimen/corner_radius_small</item>
+        <item name="rippleColor">@color/gray_100</item>
+        <item name="strokeColor">@color/gray_100</item>
+    </style>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margin_padding_16dp"
+        android:paddingEnd="@dimen/margin_padding_16dp"
+        tools:context=".ui.home.HomeFragment">
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginTop="@dimen/margin_padding_16dp"
+            android:layout_marginBottom="@dimen/margin_padding_16dp"
+            android:drawableStart="@drawable/ic_outline_search_gray_24"
+            android:drawablePadding="@dimen/margin_padding_8dp"
+            android:ellipsize="end"
+            android:hint="@string/input_search_placehodler"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/margin_padding_16dp"
+            android:paddingRight="@dimen/margin_padding_16dp"
+            android:textAlignment="textStart" />
+
+        <!-- Album Slider -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="@dimen/margin_padding_16dp">
+
+            <ProgressBar
+                android:id="@+id/prb_album_slider_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <!-- Bảng xếp hạng -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding_16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/chart"
+            android:textSize="@dimen/font_size_extra_large" />
+
+        <ProgressBar
+            android:id="@+id/prb_random_song_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_random_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-16dp"
+            android:layout_marginEnd="-16dp"
+            android:layout_marginBottom="@dimen/margin_padding_16dp" />
+
+        <!-- Mới phát hành -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding_16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Mới Phát Hành"
+            android:textSize="@dimen/font_size_extra_large" />
+
+        <ProgressBar
+            android:id="@+id/prb_new_released_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_new_released_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-16dp"
+            android:layout_marginEnd="-16dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

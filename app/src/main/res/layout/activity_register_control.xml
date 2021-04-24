@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterControlActivity">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_48dp"
+        android:layout_marginEnd="@dimen/margin_padding_48dp"
+        android:src="@drawable/antigravity_people"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.016"
+        android:text="@string/register"
+        android:textSize="@dimen/font_size_extra_extra_large"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_padding_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_16dp"
+            android:fontFamily="@font/roboto_light"
+            android:letterSpacing="0.016"
+            android:text="@string/already_have_an_account"
+            app:layout_constraintEnd_toStartOf="@+id/tv_login"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_8dp"
+            android:layout_marginTop="@dimen/margin_padding_16dp"
+            android:letterSpacing="0.016"
+            android:text="@string/login_now"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_question"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton5"
+        style="@style/Theme.CustomMaterialButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/margin_padding_32dp"
+        android:layout_marginEnd="@dimen/margin_padding_32dp"
+        android:layout_marginBottom="@dimen/margin_padding_16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:stateListAnimator="@null"
+        android:text="@string/sign_up_with_google"
+        app:icon="@drawable/ic_google"
+        app:iconGravity="textStart"
+        app:iconSize="@dimen/icon_small_size"
+        app:iconTint="@android:color/transparent"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        style="@style/Theme.CustomMaterialButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/margin_padding_32dp"
+        android:layout_marginEnd="@dimen/margin_padding_32dp"
+        android:layout_marginBottom="@dimen/margin_padding_24dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:stateListAnimator="@null"
+        android:text="@string/sign_up_with_facebook"
+        app:icon="@drawable/ic_facebook"
+        app:iconGravity="textStart"
+        app:iconSize="@dimen/icon_small_size"
+        app:iconTint="@android:color/transparent"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/tv_create_a_new_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_create_a_new_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_padding_16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:letterSpacing="0.016"
+        android:text="@string/create_a_new_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

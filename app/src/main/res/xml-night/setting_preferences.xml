@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        app:defaultValue="auto"
+        app:entries="@array/theme_value"
+        app:entryValues="@array/theme_id"
+        app:icon="@drawable/ic_outline_brightness_4_light_24"
+        app:key="change_app_theme"
+        app:title="Giao diện Sáng / Tối"
+        app:useSimpleSummaryProvider="true" />
+
+    <Preference
+        app:icon="@drawable/ic_outline_exit_to_app_light_24"
+        app:key="logout"
+        app:title="@string/logout" />
+
+</PreferenceScreen>

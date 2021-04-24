@@ -1,0 +1,23 @@
+{
+    "name": "crawlZingMp3",
+    "version": "1.0.0",
+    "description": "",
+    "main": "crawl.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "lodash": "^4.17.20",
+        "request": "^2.88.2",
+        "request-promise": "^4.2.6",
+        "tough-cookie-file-store": "^2.0.2"
+    },
+    "devDependencies": {
+        "@types/request-promise": "^4.1.47",
+        "@types/tough-cookie-file-store": "^2.0.1",
+        "firebase": "^8.2.3"
+    }
+}

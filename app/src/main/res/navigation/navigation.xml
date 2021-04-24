@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.music.ui.home.HomeFragment"
+        android:label="Trang Chủ"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_to_play_song_fragment"
+            app:destination="@id/navigation_play_song_fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_navigation_home_to_searchFragment"
+            app:destination="@id/navigation_search_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chart"
+        android:name="com.music.ui.chart.ChartFragment"
+        android:label="Bảng Xếp Hạng"
+        tools:layout="@layout/fragment_chart">
+        <action
+            android:id="@+id/action_navigation_to_play_song_fragment"
+            app:destination="@id/navigation_play_song_fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_account_fragment"
+        android:name="com.music.ui.account.AccountFragment"
+        android:label="Cá Nhân"
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_navigation_to_play_song_fragment"
+            app:destination="@id/navigation_play_song_fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_setting_fragment"
+        android:name="com.music.ui.settings.SettingsFragment"
+        android:label="@string/setting">
+        <action
+            android:id="@+id/action_navigation_to_play_song_fragment"
+            app:destination="@id/navigation_play_song_fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_play_song_fragment"
+        android:name="com.music.ui.playsong.PlaySongFragment"
+        android:label=""
+        tools:layout="@layout/fragment_play_song">
+        <argument
+            android:name="play_now_song"
+            app:argType="com.music.models.Song" />
+        <argument
+            android:name="play_list"
+            app:argType="com.music.models.Song[]" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search_fragment"
+        android:name="com.music.ui.search.SearchFragment"
+        android:label="Tìm kiếm"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_navigation_to_play_song_fragment"
+            app:destination="@id/navigation_play_song_fragment" />
+        <action
+            android:id="@+id/action_navigation_to_artist_fragment"
+            app:destination="@id/navigation_artist_fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_artist_fragment"
+        android:name="com.music.ui.artist.ArtistFragment"
+        android:label="fragment_artist"
+        tools:layout="@layout/fragment_artist" >
+        <argument
+            android:name="artist"
+            app:argType="com.music.models.Artist" />
+    </fragment>
+
+</navigation>

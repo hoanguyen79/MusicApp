@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Ứng dụng nghe nhạc</string>
+    <string name="register">Đăng Ký</string>
+    <string name="already_have_an_account">Bạn đã có tài khoản?</string>
+    <string name="login_now">Đăng Nhập Ngay</string>
+    <string name="sign_up_with_google">Đăng ký bằng Google</string>
+    <string name="sign_up_with_facebook">Đăng ký bằng Facebook</string>
+    <string name="create_a_new_account">Tạo tài khoản mới</string>
+    <string name="full_name">Họ tên</string>
+    <string name="enter_your_full_name">Nhập họ tên của bạn</string>
+    <string name="email">Địa chỉ email</string>
+    <string name="enter_email_address">Nhập địa chỉ email của bạn</string>
+    <string name="password">Mật khẩu</string>
+    <string name="enter_your_password">Nhập mật khẩu của bạn</string>
+    <string name="confirm_password">Nhập lại mật khẩu</string>
+    <string name="reenter_your_password">Nhập lại mật khẩu đã nhập</string>
+    <string name="input_search_placehodler">Nhập tên bài hát, ca sĩ bạn muốn tìm kiếm</string>
+    <string name="login">Đăng nhập</string>
+    <string name="hint_username">Tài khoản</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="save_account">Lưu tài khoản</string>
+    <string name="already_havent_an_account">Bạn chưa có tài khoản?</string>
+    <string name="register_now">Đăng ký ngay!</string>
+    <string name="the_email_address_is_already_in_use_by_another_account">Địa chỉ email này đã được
+        sử dụng bởi một tài khoản khác</string>
+    <string name="setting">Cài Đặt</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="artist">Ca sĩ</string>
+    <string name="song">Bài hát</string>
+
+    <!-- Menu (BottomNavigationView) -->
+    <string name="discover">Khám phá</string>
+    <string name="chart">Bảng xếp hạng</string>
+    <string name="personal">Cá Nhân</string>
+
+    <!--  Facebook app id -->
+    <string name="facebook_app_id">120961559875105</string>
+    <string name="fb_login_protocol_scheme">fb120961559875105</string>
+</resources>

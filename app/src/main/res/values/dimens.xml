@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_padding_8dp">8dp</dimen>
+    <dimen name="margin_padding_16dp">16dp</dimen>
+    <dimen name="margin_padding_24dp">24dp</dimen>
+    <dimen name="margin_padding_32dp">32dp</dimen>
+    <dimen name="margin_padding_40dp">40dp</dimen>
+    <dimen name="margin_padding_48dp">48dp</dimen>
+
+    <dimen name="icon_small_size">24dp</dimen>
+
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_medium">14sp</dimen>
+    <dimen name="font_size_large">16sp</dimen>
+    <dimen name="font_size_extra_large">20sp</dimen>
+    <dimen name="font_size_extra_extra_large">32sp</dimen>
+
+    <dimen name="corner_radius_small">8dp</dimen>
+
+    <dimen name="input_height">40dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+</resources>

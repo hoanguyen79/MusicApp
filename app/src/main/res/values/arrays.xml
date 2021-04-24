@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="theme_id">
+        <item name="light">light</item>
+        <item name="dark">dark</item>
+        <item name="auto">auto</item>
+    </string-array>
+
+    <string-array name="theme_value">
+        <item name="light">Sáng</item>
+        <item name="dark">Tối</item>
+        <item name="auto">Mặc định theo hệ thống</item>
+    </string-array>
+</resources>
